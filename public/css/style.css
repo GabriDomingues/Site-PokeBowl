@@ -1,0 +1,39 @@
+.header-font {
+    color: #ffffff !important;
+    font-weight: bold !important;
+    font-size: 18px !important;
+}
+
+.header-font:hover {
+    color: #E3E3E3 !important;
+}
+
+.footer-font {
+
+}
+
+.footer-bg {
+    background-color: #000000;
+    max-width: 100% !important;
+}
+
+.btn-carousel {
+    background-color: #8DC264 !important;
+    border-color: #8DC264 !important;
+    border-radius: 0 !important;
+    width: 170px;
+    height: 45px;
+    font-weight: bold !important;
+    font-size: 20px !important;
+    font-family: sans-serif !important;
+    color: #ffffff !important;
+}
+
+.btn-carousel:hover {
+    border-color: #69924B !important;
+    background-color: #69924B !important;
+}
+
+.carousel-text {
+    font-family: sans-serif !important;
+}
