@@ -1,11 +1,13 @@
 .header-font {
     color: #ffffff !important;
-    font-weight: bold !important;
-    font-size: 18px !important;
+    font-weight: normal !important;
+    font-size: 20px !important;
 }
 
 .footer-font {
-
+    color: #ffffff !important;
+    font-weight: normal !important;
+    font-size: 18px !important;
 }
 
 .footer-bg {
@@ -30,6 +32,136 @@
     background-color: #69924B !important;
 }
 
+.btn-sobre {
+    background-color: #8DC264 !important;
+    border-color: #8DC264 !important;
+    border-radius: 0 !important;
+    width: 170px;
+    height: 45px;
+    font-weight: bold !important;
+    font-size: 20px !important;
+    font-family: sans-serif !important;
+    color: #ffffff !important;
+}
+
+.btn-sobre:hover {
+    border-color: #69924B !important;
+    background-color: #69924B !important;
+}
+
 .carousel-text {
     font-family: sans-serif !important;
+}
+
+@media (min-width: 200px) {
+    .imagem-sobre {margin-right: 10px !important; margin-left: 10px !important; padding-top: 50px !important;}
+    .carousel-caption {display: none !important;}
+
+}
+
+@media (min-width: 360px) { /* X-Small devices (landscape phones, 360px and up) */
+    .carousel-caption h1 {font-size: 1.3rem !important;}
+    .carousel-caption h6 {font-size: 0.9rem !important;}
+    .carousel-caption {top: 3% !important;}
+    .imagem-sobre {margin-right: 10px !important; margin-left: 10px !important;}
+}
+
+@media (min-width: 576px) { /* X-Small devices (landscape phones, 576px and up) */
+    .carousel-caption h1 {font-size: 1.7rem !important;}
+    .carousel-caption h6 {font-size: 1rem !important;}
+    .carousel-caption {top: 23% !important}
+    .imagem-sobre {margin-right: 50px !important; margin-left: 50px !important;}
+}
+
+@media (min-width: 768px) { /* small devices (tablets, 768px and up */
+    .carousel-caption h1 {font-size: 2.5rem !important;}
+    .carousel-caption h6 {font-size: 1.7rem !important;}
+    .carousel-caption {top: 25% !important}
+    .imagem-sobre {margin-right: 100px !important; margin-left: 100px !important;}
+
+}
+
+@media (min-width: 992px) { /* { // Large devices (desktops, 992px and up) */
+    .carousel-caption h1 {font-size: 2.5rem !important;}
+    .carousel-caption h6 {font-size: 1.5rem !important;}
+    .carousel-caption {top: 30% !important}
+    .imagem-sobre {margin-right: 50px !important; margin-left: 50px !important;}
+
+}
+
+@media (min-width: 1200px) { /* {  Extra large devices (large desktops, 1200px and up */
+    .carousel-caption h1 {font-size: 3.2rem !important;}
+    .carousel-caption h6 {font-size: 1.7rem !important;}
+    .imagem-sobre {margin-right: 50px !important; margin-left: 50px !important;}
+}
+
+@media (min-width: 1400px) { /* {  XX large devices (large desktops, 1400px and up */
+    .carousel-caption h1 {font-size: 4rem !important;}
+    .carousel-caption h6 {font-size: 2rem !important;}
+    .carousel-caption {top: 30% !important}
+    .imagem-sobre {margin-right: 50px !important; margin-left: 50px !important;}
+}
+
+@media (min-width: 1600px) { /* {  XX large devices (large desktops, 1600px and up */
+    .carousel-caption h1 {font-size: 4.5rem !important;}
+    .carousel-caption h6 {font-size: 2.2rem !important;}
+    .carousel-caption {top: 32% !important}
+    .imagem-sobre {margin-right: 50px !important; margin-left: 50px !important;}
+}
+
+.imagem-sobre {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.texto-sobre h1 {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.texto-sobre p {
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .texto-sobre p {font-family: sans-serif; font-size: 20px; text-align: justify; padding-bottom: 10px; width: 450px;}
+    .texto-sobre h1 {font-family: sans-serif; font-weight: 700; font-size: 50px; width: 450px;}
+    .divider {width: 70px; height: 2px; display: block; background-color: #8DC264;}
+    .btn-sobre {background-color: #8DC264 !important; border-color: #8DC264 !important; border-radius: 0 !important;
+        width: 170px; height: 45px; font-weight: bold !important; font-size: 20px !important;
+        font-family: sans-serif !important; color: #ffffff !important;}
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .texto-sobre p {font-family: sans-serif; font-size: 20px; text-align: justify; padding-bottom: 10px; position: relative; left: 8%; width: 400px;}
+    .texto-sobre h1 {font-family: sans-serif; font-weight: 700; font-size: 50px; position: relative; left: 8%; width: 400px;}
+    .divider {width: 70px; height: 2px; display: block; background-color: #8DC264; position: relative; left: 8%;}
+    .btn-sobre {width: 170px; height: 45px; font-weight: bold !important; font-size: 20px !important;
+        font-family: sans-serif !important; color: #ffffff !important; position: relative !important; left: 8% !important;}
+}
+
+@media (min-width: 1400px) {
+    .texto-sobre p {font-family: sans-serif; font-size: 20px; text-align: justify; padding-bottom: 10px; position: relative; left: 7%; width: 500px}
+    .texto-sobre h1 {font-family: sans-serif; font-weight: 700; font-size: 50px; position: relative; left: 7%; width: 500px}
+    .divider {width: 70px; height: 2px; display: block; background-color: #8DC264; position: relative; left: 7%;}
+    .btn-sobre {width: 170px; height: 45px; font-weight: bold !important; font-size: 20px !important;
+        font-family: sans-serif !important; color: #ffffff !important; position: relative !important; left: 7% !important;}
+}
+
+
+.divider {
+    width: 70px;
+    height: 2px;
+    display: block;
+    background-color: #8DC264;
+}
+
+.imagem-responsiva {
+    width: 100%;
+    height: auto;
 }
