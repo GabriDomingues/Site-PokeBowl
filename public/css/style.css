@@ -4,17 +4,6 @@
     font-size: 20px !important;
 }
 
-.footer-font {
-    color: #ffffff !important;
-    font-weight: normal !important;
-    font-size: 18px !important;
-}
-
-.footer-bg {
-    background-color: #000000;
-    max-width: 100% !important;
-}
-
 .btn-carousel {
     background-color: #8DC264 !important;
     border-color: #8DC264 !important;
@@ -164,4 +153,67 @@
 .imagem-responsiva {
     width: 100%;
     height: auto;
+}
+
+
+.footer-bg {
+    position: relative;
+    background: url("../images/darken_lights3.jpg");
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.logo-footer {
+    filter: brightness(0) invert(1);
+}
+
+.footer-font p {
+    font-size: 18px;
+
+    opacity: 0.6;
+    color: #ffffff !important;
+}
+
+.footer-font h6 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.social-links {
+    opacity: 0.9;
+}
+
+.footer-font {
+    text-align: left;
+}
+
+.facebook-icon {
+    margin-right: 7px;
+    margin-left: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.facebook-icon:hover {
+    opacity: 0.2;
+
+}
+
+.instagram-icon {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.instagram-icon:hover {
+    opacity: 0.2;
+}
+
+.whatsapp-icon {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.whatsapp-icon:hover {
+    opacity: 0.2;
 }
