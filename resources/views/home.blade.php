@@ -43,7 +43,7 @@
 
     {{-- Sobre nós --}}
 
-    <section id="sobre" class="imagem-sobre">
+    <section id="sobre" class="imagem-sobre mt-5">
         <div class="container m-0">
             <div class="row gy-4 align-items-center centering">
                 <div class="col-lg-5">
