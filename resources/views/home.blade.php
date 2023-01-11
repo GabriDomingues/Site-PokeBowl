@@ -4,7 +4,7 @@
 
     {{-- Carossel --}}
 
-    <div id="carouselExampleFade" class="carousel slide">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="{{ asset('images/poke_bowl-1920-darken.jpg') }}" class="d-block w-100 item" alt="...">
@@ -54,7 +54,7 @@
                     <div class="divider my-4"></div>
                     <p>Buscando a satisfação dos nossos clientes e através de inúmeras pesquisas, o Poke Bowl surgiu para satisfazer as necessidades de uma comida deliciosa e ao mesmo tempo saudável. O convidamos para conhecer o nosso restaurante ou fazer um pedido através do nosso site.</p>
                     <p>Nosso restaurante fica em Curitiba na rua Rocha Pombo, número 000, próximo ao terminal do Cabral. Estamos ansiosos aguardando a sua visita!</p>
-                    <a href="#" class="btn btn-sobre">Peça On-line</a>
+                    <a href="#" class="btn btn-carousel mx-4">Peça Online</a>
                 </div>
             </div>
         </div>
