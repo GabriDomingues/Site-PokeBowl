@@ -2,12 +2,12 @@
 
 @section('content')
 
-<div class="container py-5">
+<div class="container" style="padding-bottom: 120px; padding-top: 120px;">
     <div class="row justify-content-center">
         <div class="col-md-8" >
-            <div class="card">
+            <div class="card shadow">
                     <div class="card-body">
-                        <div class="">
+                        <div>
                             <h3>Cadastro</h3>
                             <hr class="mt-2 mb-3 header-div">
                         </div>
@@ -39,7 +39,7 @@
                                 <input type="number" class="form-content form-control fw-bold" id="adress" placeholder="">
                             </div>
                             <div class="col-3">
-                                <label for="phone" class="form-label">Celular com DDD</label>
+                                <label for="phone" class="form-label">Celular</label>
                                 <input type="text" class="form-content form-control fw-bold" id="phone" placeholder="" maxlength="14">
                             </div>
                             <div class="col-md-6">
@@ -64,7 +64,7 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button type="submit" class="btn btn-carousel">Salvar</button>
+                                <button type="submit" class="btn btn-carousel shadow-sm">Salvar</button>
                             </div>
                         </form>
                     </div>
