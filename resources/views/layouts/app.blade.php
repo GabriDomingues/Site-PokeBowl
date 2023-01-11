@@ -31,9 +31,9 @@
         <nav class="navbar navbar-expand-md navbar-light shadow-sm" style="background-color: #8DC264">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img class="rounded-circle" alt="avatar1" src="{{ asset('images/poke_bowl_80x80.jpg') }}"/>
+                    <img class="rounded-circle shadow" alt="avatar1" src="{{ asset('images/poke_bowl_80x80.jpg') }}"/>
                     <a class="nav-link header-font"  href="">{{ __('Seja um Franqueado') }}</a>
-                    <a class="nav-link header-font"  href="">{{ __('FAQ') }}</a>
+                    <a class="nav-link header-font"  href="">{{ __('Lojas') }}</a>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -51,7 +51,7 @@
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a class="nav-link header-font"  href="{{ route('login') }}" style="padding-right: 20px">{{ __('Login') }}</a>
+                                    <a class="nav-link header-font"  href="{{ route('login') }}" style="padding-right: 20px;">{{ __('Login') }}</a>
                                 </li>
                             @endif
 
