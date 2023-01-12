@@ -35,8 +35,8 @@
                                 <input type="text" class="form-content form-control fw-bold" id="adress" placeholder="">
                             </div>
                             <div class="col-2">
-                                <label for="adress" class="form-label">Número</label>
-                                <input type="number" class="form-content form-control fw-bold" id="adress" placeholder="">
+                                <label for="adress-number" class="form-label">Número</label>
+                                <input type="number" class="form-content form-control fw-bold" id="adress-number" placeholder="">
                             </div>
                             <div class="col-3">
                                 <label for="phone" class="form-label">Celular</label>
