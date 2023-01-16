@@ -20,6 +20,12 @@ class User extends Authenticatable
     protected $fillable = [
         'email',
         'password',
+        'password_confirmation',
+        'adress',
+        'adress_number',
+        'phone',
+        'cpf',
+        'cep',
     ];
 
     /**
@@ -29,7 +35,7 @@ class User extends Authenticatable
      */
     protected $hidden = [
         'password',
-        'confirm-password',
+        'password_confirmation',
         'remember_token',
     ];
 
@@ -41,4 +47,6 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
 }
+

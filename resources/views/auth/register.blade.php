@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container" style="padding-bottom: 120px; padding-top: 120px;">
+<div class="container" style="padding-bottom: 130px; padding-top: 120px;">
     <div class="row justify-content-center">
         <div class="col-md-8" >
             <div class="card shadow">
@@ -52,8 +52,8 @@
                                 @enderror
                             </div>
                             <div class="col-md-6">
-                                <label for="password-confirm" class="form-label">Confirmar Senha</label>
-                                <input id="password-confirm" type="password" class="form-content form-control" name="password_confirmation" required autocomplete="new-password">
+                                <label for="password_confirmation" class="form-label">Confirmar Senha</label>
+                                <input id="password_confirmation" type="password" class="form-content form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
                             <div class="col-12">
                                 <div class="form-check">
