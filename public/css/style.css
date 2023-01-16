@@ -6,8 +6,8 @@
 }
 
 .header-font:hover {
-    opacity: 0.4 !important;
-    transform: scale(0.97);
+    color: black !important;
+    transition: 0.2s;
 }
 
 .btn-carousel {
@@ -270,4 +270,8 @@
 
 .title-description {
     font-family: sans-serif;
+}
+
+.rounded-circle:active {
+    transform: scale(0.96);
 }

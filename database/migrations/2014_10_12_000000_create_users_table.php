@@ -18,9 +18,9 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->string('confirm-password');
-            $table->text('adress');
-            $table->string('adress-number');
+            $table->string('password_confirmation');
+            $table->string('adress');
+            $table->string('adress_number');
             $table->string('phone');
             $table->string('cpf')->unique();
             $table->string('cep');
