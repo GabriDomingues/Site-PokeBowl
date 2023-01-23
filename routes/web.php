@@ -1,7 +1,5 @@
 <?php
 
-use App\Http\Controllers\Auth\RegisterController;
-use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -20,8 +18,11 @@ Route::get('/', function () {
     return view('home');
 });
 
-Auth::routes();
+//Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/login', 'App\Http\Controllers\UserController@loginUser')->name('login');
+Route::get('/register', 'App\Http\Controllers\UserController@registerUser')->name('register');
+
 
 
