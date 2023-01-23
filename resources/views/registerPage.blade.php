@@ -2,10 +2,10 @@
 
 @section('content')
 
-<div class="container" style="padding-bottom: 130px; padding-top: 120px;">
-    <div class="row justify-content-center">
-        <div class="col-md-8" >
-            <div class="card shadow">
+    <div class="container" style="padding-bottom: 130px; padding-top: 120px;">
+        <div class="row justify-content-center">
+            <div class="col-md-8" >
+                <div class="card shadow">
                     <div class="card-body">
                         <div>
                             <h3>Cadastro</h3>
@@ -17,7 +17,7 @@
                                 <label for="email" class="form-label">E-mail</label>
                                 <input type="email" class=" form-content fw-bold form-control @error('email')  @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" id="email">
                                 @error('email')
-                                    <span class="invalid-feedback" role="alert">
+                                <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror

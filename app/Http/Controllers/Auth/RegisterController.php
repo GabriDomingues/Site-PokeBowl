@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
-use http\Env\Request;
+use Illuminate\Auth\EloquentUserProvider;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -55,7 +55,7 @@ class RegisterController extends Controller
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'password_confirmation' => ['required', 'string', 'min:8', 'confirmed'],
             'adress' => ['required', 'string', 'adress', 'confirmed'],
-            'adress_number' => ['required', 'number', 'adress_number', 'confirmed'],
+            'adress_number' => ['required', 'string', 'adress_number', 'confirmed'],
             'phone' => ['required', 'string', 'phone', 'confirmed'],
             'cpf' => ['required', 'string', 'cpf', 'confirmed'],
             'cep' => ['required', 'string', 'cep', 'confirmed'],
@@ -80,11 +80,6 @@ class RegisterController extends Controller
             'cpf' => $data['cpf'],
             'cep' => $data['cep'],
         ]);
-
-        return redirect('/');
     }
 }
-
-
-
 
