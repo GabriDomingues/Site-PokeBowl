@@ -24,23 +24,23 @@
                             </div>
                             <div class="col-md-3">
                                 <label for="cpf" class="form-label">CPF</label>
-                                <input type="text" class="form-content form-control fw-bold" id="cpf" maxlength="14">
+                                <input type="text" class="form-content form-control fw-bold" id="cpf" maxlength="14" name="cpf">
                             </div>
                             <div class="col-md-3">
                                 <label for="cep" class="form-label">CEP</label>
-                                <input type="text" class="form-content form-control fw-bold" id="cep" maxlength="9">
+                                <input type="text" class="form-content form-control fw-bold" id="cep" maxlength="9" name="cep">
                             </div>
                             <div class="col-7">
                                 <label for="adress" class="form-label">Endereço</label>
-                                <input type="text" class="form-content form-control fw-bold" id="adress" placeholder="">
+                                <input type="text" class="form-content form-control fw-bold" id="adress" placeholder="" name="adress">
                             </div>
                             <div class="col-2">
-                                <label for="adress-number" class="form-label">Número</label>
-                                <input type="number" class="form-content form-control fw-bold" id="adress-number" placeholder="">
+                                <label for="adress_number" class="form-label">Número</label>
+                                <input type="number" class="form-content form-control fw-bold" id="adress_number" placeholder="" name="adress_number">
                             </div>
                             <div class="col-3">
                                 <label for="phone" class="form-label">Celular</label>
-                                <input type="text" class="form-content form-control fw-bold" id="phone" placeholder="" maxlength="14">
+                                <input type="text" class="form-content form-control fw-bold" id="phone" placeholder="" maxlength="14" name="phone">
                             </div>
                             <div class="col-md-6">
                                 <label for="password" class="form-label">Senha</label>
