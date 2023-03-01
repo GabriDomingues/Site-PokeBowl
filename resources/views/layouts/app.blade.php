@@ -108,14 +108,14 @@
                     </div>
                     <div class="col-lg-3 footer-font ms-auto mx-9">
                         <h6 class="text-white mb-4">CONTATO</h6>
-                        <p class="mb-2">Telefone: (41)0000-0000</p>
+                        <p class="mb-2">Telefone: (41) 0000-0000</p>
                         <p class="mb-2">E-mail: contato@pokebowl.com.br</p>
                         <p class="mb-4">Endereço: Curitiba, rua Rocha Pombo, número 000, cabral</p>
                     </div>
                     <div class="col-lg-3 footer-font">
                         <h6 class="text-white mb-4">HORÁRIOS</h6>
-                        <p class="mb-2">Dias de semana - 11h às 23h</p>
-                        <p class="mb-4">Finais de semana - 11h às 21h</p>
+                        <p class="mb-2">Dias de semana — 11h às 23h</p>
+                        <p class="mb-4">Finais de semana — 11h às 21h</p>
                     </div>
                 </div>
             </div>

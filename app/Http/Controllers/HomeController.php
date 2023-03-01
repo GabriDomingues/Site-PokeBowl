@@ -45,16 +45,16 @@ class HomeController extends Controller
 
     public function rotaPedidos()
     {
-        return view('admin/pedidos');
+        return view('admin.pedidos');
     }
 
     public function rotaProdutos()
     {
-        return view('admin/produtos');
+        return view('admin.produtos');
     }
 
     public function rotaClientes()
     {
-        return view('admin/clientes');
+        return view('admin.clientes');
     }
 }
