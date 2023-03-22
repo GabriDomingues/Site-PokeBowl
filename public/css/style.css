@@ -276,3 +276,44 @@
     transform: scale(0.96);
 }
 
+.titulo-promocoes {
+    width: 100% !important;
+}
+
+.btn-add {
+    background-color: #000000 !important;
+    border-color: #ffffff !important;
+    border-radius: 4px !important;
+    width: 110px;
+    height: 40px;
+    font-weight: bold !important;
+    font-size: 18px !important;
+    font-family: sans-serif !important;
+    color: #ffffff !important
+}
+
+.btn-add:hover {
+    border-color: #000000 !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+.btn-add:focus:not(:focus-visible) {
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+.btn-add:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}
+
+.product-container {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 750px !important;
+    margin-right: 6px !important;
+    overflow: hidden !important;
+}

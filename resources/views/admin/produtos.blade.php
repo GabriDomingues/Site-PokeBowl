@@ -1,6 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
+    <div class="product-container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    {{-- PAREI AQUI --}}<h5 class="card-header h5">Produtos<a href="{{ route('addProdutos') }}" class="btn btn-add" style="margin-left: 60%">Adicionar</a></h5>
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px; height: 900px">
         <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item">
@@ -30,6 +43,5 @@
         </ul>
         <hr>
     </div>
-
-
 @endsection
+
