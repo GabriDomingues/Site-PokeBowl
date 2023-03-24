@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->double('price');
             $table->text('description');
+            $table->text('type');
             $table->string('image');
             $table->timestamps();
         });

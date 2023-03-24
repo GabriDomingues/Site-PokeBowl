@@ -4,11 +4,10 @@
     <div class="product-container">
         <div class="row">
             <div class="col-md-12">
-                <div class="card">
-                    {{-- PAREI AQUI --}}<h5 class="card-header h5">Produtos<a href="{{ route('addProdutos') }}" class="btn btn-add" style="margin-left: 60%">Adicionar</a></h5>
+                <div class="card" STYLE="width: 996px">
+                    <h5 class="card-header h5">Produtos<a href="{{ route('addProdutos') }}" class="btn btn-add" style="margin-left: 720px">Adicionar</a></h5>
                     <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <h5 class="card-title">Listagem dos produtos</h5>
                     </div>
                 </div>
             </div>

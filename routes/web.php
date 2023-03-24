@@ -22,7 +22,7 @@ Route::get('/admin/produtos', 'App\Http\Controllers\HomeController@rotaProdutos'
 Route::get('/admin/clientes', 'App\Http\Controllers\HomeController@rotaClientes')->name('clientes');
 
 /* products create */
-Route::get('/admin/produtos/add', [App\Http\Controllers\ProductController::class, 'cadastroProdutos'])->name('addProdutos');
+Route::get('/admin/produtos/add', [App\Http\Controllers\ProductController::class, 'create'])->name('addProdutos');
 
 /* registro */
 Route::get('/register', 'App\Http\Controllers\UserController@registerUser')->name('register');

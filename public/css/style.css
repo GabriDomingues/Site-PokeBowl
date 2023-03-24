@@ -313,7 +313,15 @@
 .product-container {
     position: absolute;
     margin-top: 300px;
-    margin-left: 750px !important;
+    margin-left: 620px !important;
     margin-right: 6px !important;
+    overflow: hidden !important;
+}
+
+.product-form-container {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 450px !important;
+    margin-right: 190px !important;
     overflow: hidden !important;
 }
