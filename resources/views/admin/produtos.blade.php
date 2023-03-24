@@ -1,6 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
+    <div class="product-container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card" STYLE="width: 996px">
+                    <h5 class="card-header h5">Produtos<a href="{{ route('addProdutos') }}" class="btn btn-add" style="margin-left: 720px">Adicionar</a></h5>
+                    <div class="card-body">
+                        <h5 class="card-title">Listagem dos produtos</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px; height: 900px">
         <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item">
@@ -30,6 +42,5 @@
         </ul>
         <hr>
     </div>
-
-
 @endsection
+

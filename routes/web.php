@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -19,9 +21,14 @@ Route::get('/admin/pedidos', 'App\Http\Controllers\HomeController@rotaPedidos')-
 Route::get('/admin/produtos', 'App\Http\Controllers\HomeController@rotaProdutos')->name('produtos');
 Route::get('/admin/clientes', 'App\Http\Controllers\HomeController@rotaClientes')->name('clientes');
 
+/* products create */
+Route::get('/admin/produtos/add', [App\Http\Controllers\ProductController::class, 'create'])->name('addProdutos');
+
 /* registro */
 Route::get('/register', 'App\Http\Controllers\UserController@registerUser')->name('register');
 Route::post('/register', 'App\Http\Controllers\UserController@storeUser')->name('store');
 
 /* menu */
 Route::get('/menu', 'App\Http\Controllers\MenuController@rotaMenu')->name('menu');
+
+
