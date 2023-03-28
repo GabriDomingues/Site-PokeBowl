@@ -47,7 +47,7 @@
                 </a>
             </li>
             <li>
-                <a href="" class="nav-link active">
+                <a href="{{ url('admin/produtos') }}" class="nav-link active">
                     <svg class="bi me-2" width="16" height="16"><use xlink:href="#produtos"></use></svg>
                     Produtos
                 </a>
