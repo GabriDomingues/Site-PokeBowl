@@ -2,6 +2,7 @@
 
 @section('content')
 
+
     <div class="container" style="padding-bottom: 130px; padding-top: 120px;">
         <div class="row justify-content-center">
             <div class="col-md-8" >
@@ -22,9 +23,16 @@
                                     </span>
                                 @enderror
                             </div>
+{{--                            <div class="col-md-3 {{ $errors->has('cpf') ? 'has-error' : ''}}">--}}
+{{--                                <label for="cpf" class="form-label">CPF</label>--}}
+{{--                                <input type="text" class="form-content form-control fw-bold" id="cpf" name="cpf">--}}
+{{--                                {!! $errors->first('cpf', '<p class="help-block">:message</p>') !!}--}}
+{{--                                <div class="help-block with-errors"></div>--}}
+{{--                            </div>--}}
                             <div class="col-md-3">
                                 <label for="cpf" class="form-label">CPF</label>
-                                <input type="text" class="form-content form-control fw-bold" id="cpf" maxlength="14" name="cpf">
+                                <input type="text" class="form-content form-control fw-bold" id="cpf" name="cpf">
+                                // PAREI AQUI, TESTAR O @ERROR
                             </div>
                             <div class="col-md-3">
                                 <label for="cep" class="form-label">CEP</label>

@@ -276,8 +276,8 @@
     transform: scale(0.96);
 }
 
-.titulo-promocoes {
-    width: 100% !important;
+.titulo-menu {
+    padding-top: 20px;
 }
 
 .btn-add {

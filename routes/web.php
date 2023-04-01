@@ -18,6 +18,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 /* Produtos */
 Route::get('/admin/produtos', 'App\Http\Controllers\ProductController@index')->name('produtos');
 Route::get('/admin/produtos/add', 'App\Http\Controllers\ProductController@create')->name('addProdutos');
+Route::post('/admin/produtos/add', 'App\Http\Controllers\ProductController@store')->name('storeProdutos');
 
 /* Dashboard */
 Route::get('/admin/dashboard', 'App\Http\Controllers\HomeController@redirects')->name('dashboard');
@@ -35,6 +36,13 @@ Route::get('/register', 'App\Http\Controllers\UserController@registerUser')->nam
 Route::post('/register', 'App\Http\Controllers\UserController@storeUser')->name('store');
 
 /* Menu */
-Route::get('/menu', 'App\Http\Controllers\MenuController@rotaMenu')->name('menu');
+Route::get('/menu', 'App\Http\Controllers\MenuController@index')->name('menu');
+
+/* Cart */
+Route::get('/carrinho', [\App\Http\Controllers\CartController::class, 'cartList'])->name('carrinho');
+Route::post('/carrinho', [\App\Http\Controllers\CartController::class, 'addCart'])->name('addCarrinho');
+
+
+
 
 

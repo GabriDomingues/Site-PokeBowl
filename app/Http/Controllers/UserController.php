@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\UserRequest;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use LaravelLegends\PtBrValidator\Rules\FormatoCpf;
 
 class UserController extends Controller
 {
@@ -19,7 +21,7 @@ class UserController extends Controller
         return view('loginPage');
     }
 
-    public function storeUser(Request $request)
+    public function storeUser(UserRequest $request)
     {
         $user = new User();
         $user->email = $request->email;
