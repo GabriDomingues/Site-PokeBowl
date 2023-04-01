@@ -2,20 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Product;
 use Illuminate\Http\Request;
 
-class MenuController extends Controller
+class PedidosController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        $products = Product::all();
-        return view('menu', compact('products'));
+        return view('admin/pedidos');
     }
 
     /**

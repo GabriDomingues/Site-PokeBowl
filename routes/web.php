@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\CartController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -9,26 +8,41 @@ Route::get('/', function () {
     return view('home');
 });
 
-/* autenticação */
+/* ---------- auth ---------- */
 Auth::routes();
 
-/* home */
+/* ---------- home ---------- */
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-/* admin */
-Route::get('/admin/dashboard', [App\Http\Controllers\HomeController::class, 'redirects'])->name('dashboard');
-Route::get('/admin/pedidos', 'App\Http\Controllers\HomeController@rotaPedidos')->name('pedidos');
-Route::get('/admin/produtos', 'App\Http\Controllers\HomeController@rotaProdutos')->name('produtos');
-Route::get('/admin/clientes', 'App\Http\Controllers\HomeController@rotaClientes')->name('clientes');
+/* ---------- admin ----------*/
+/* Produtos */
+Route::get('/admin/produtos', 'App\Http\Controllers\ProductController@index')->name('produtos');
+Route::get('/admin/produtos/add', 'App\Http\Controllers\ProductController@create')->name('addProdutos');
+Route::post('/admin/produtos/add', 'App\Http\Controllers\ProductController@store')->name('storeProdutos');
 
-/* products create */
-Route::get('/admin/produtos/add', [App\Http\Controllers\ProductController::class, 'create'])->name('addProdutos');
+/* Dashboard */
+Route::get('/admin/dashboard', 'App\Http\Controllers\HomeController@redirects')->name('dashboard');
 
-/* registro */
+/* Pedidos */
+Route::get('/admin/pedidos', 'App\Http\Controllers\PedidosController@index')->name('pedidos');
+
+/* Clientes */
+Route::get('/admin/clientes', 'App\Http\Controllers\ClientesController@index')->name('clientes');
+
+
+/* ---------- user ---------- */
+/* Login */
 Route::get('/register', 'App\Http\Controllers\UserController@registerUser')->name('register');
 Route::post('/register', 'App\Http\Controllers\UserController@storeUser')->name('store');
 
-/* menu */
-Route::get('/menu', 'App\Http\Controllers\MenuController@rotaMenu')->name('menu');
+/* Menu */
+Route::get('/menu', 'App\Http\Controllers\MenuController@index')->name('menu');
+
+/* Cart */
+Route::get('/carrinho', [\App\Http\Controllers\CartController::class, 'cartList'])->name('carrinho');
+Route::post('/carrinho', [\App\Http\Controllers\CartController::class, 'addCart'])->name('addCarrinho');
+
+
+
 
 
