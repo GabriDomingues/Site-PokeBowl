@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\UserRequest;
 use App\Models\User;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-use LaravelLegends\PtBrValidator\Rules\FormatoCpf;
+use Illuminate\Support\Str;
+
 
 class UserController extends Controller
 {
@@ -23,6 +23,7 @@ class UserController extends Controller
 
     public function storeUser(UserRequest $request)
     {
+
         $user = new User();
         $user->email = $request->email;
         $user->password = Hash::make($request->password);
@@ -36,5 +37,6 @@ class UserController extends Controller
         Auth::login($user);
 
         return redirect()->route('home');
+
     }
 }

@@ -325,3 +325,8 @@
     margin-right: 190px !important;
     overflow: hidden !important;
 }
+
+.has-error {
+    color: red;
+    border-color: #DB2828 !important;
+}

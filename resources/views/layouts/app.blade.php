@@ -19,8 +19,9 @@
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 
     <!-- Links -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -28,7 +29,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light shadow-sm" style="background-color: #8DC264">
+        <nav class="navbar navbar-expand-md navbar-light shadow-sm" style="background-color: #8DC264; box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <img class="rounded-circle shadow" alt="avatar1" src="{{ asset('images/poke_bowl_80x80.jpg') }}"/>
@@ -126,3 +127,4 @@
 
 
 </html>
+

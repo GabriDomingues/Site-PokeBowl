@@ -24,14 +24,14 @@ class UserRequest extends FormRequest
     public function rules()
     {
         return [
-            'cpf' => "required|string|formato_cpf|cpf",
+            'cpf' => 'required|unique:users|Cpf|max:14|min:11',
         ];
     }
 
     public function attributes()
     {
         return [
-            'cpf' => 'cpf',
+            'cpf' => 'CPF',
         ];
     }
 
@@ -41,6 +41,7 @@ class UserRequest extends FormRequest
             // customiza mensagens de erro
             'cpf.min' => 'O campo CPF precisa ter no mínimo 11 dígitos. ',
             'cpf.max' => 'O campo CPF precisa ter no máximo 14 dígitos. ',
+            'cpf.unique' => 'O CPF digitado já foi utilizado. ',
         ];
     }
 }
